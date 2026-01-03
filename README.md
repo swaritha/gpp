@@ -49,3 +49,53 @@ Make sure you have the following installed:
    ```bash
    git clone <your-repo-url>
    cd dex-amm
+
+  Install dependencies
+
+npm install
+
+ Usage
+Compile Smart Contracts
+npx hardhat compile
+
+Run Tests
+
+This project includes 25+ test cases covering:
+
+Liquidity addition & removal
+
+Swap logic and edge cases
+
+Fee calculation and reserve updates
+
+npx hardhat test
+
+Run Code Coverage
+npx hardhat coverage
+
+Local Deployment
+npx hardhat run scripts/deploy.js
+
+ Docker Usage
+
+Run the complete test suite in an isolated Docker environment:
+
+docker-compose up --build
+
+ Contract Overview
+
+DEX.sol
+
+Core AMM logic
+
+Liquidity management
+
+Swap execution using constant product formula
+
+MockERC20.sol
+
+ERC-20 compliant mock tokens
+
+Used for testing Token A and Token B behavior
+
+
